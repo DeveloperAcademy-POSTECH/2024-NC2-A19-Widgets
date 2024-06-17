@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		576BEDA52C1EE53D005C4E4B /* NC2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576BEDA42C1EE53D005C4E4B /* NC2App.swift */; };
-		576BEDA72C1EE53D005C4E4B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576BEDA62C1EE53D005C4E4B /* ContentView.swift */; };
+		576BEDA72C1EE53D005C4E4B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576BEDA62C1EE53D005C4E4B /* HomeView.swift */; };
 		576BEDA92C1EE53E005C4E4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 576BEDA82C1EE53E005C4E4B /* Assets.xcassets */; };
 		576BEDAC2C1EE53E005C4E4B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 576BEDAB2C1EE53E005C4E4B /* Preview Assets.xcassets */; };
 		576BEDB92C1EE55A005C4E4B /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 576BEDB82C1EE55A005C4E4B /* WidgetKit.framework */; };
@@ -17,6 +17,8 @@
 		576BEDC02C1EE55A005C4E4B /* NC2Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576BEDBF2C1EE55A005C4E4B /* NC2Widget.swift */; };
 		576BEDC22C1EE55B005C4E4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 576BEDC12C1EE55B005C4E4B /* Assets.xcassets */; };
 		576BEDC62C1EE55B005C4E4B /* NC2WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 576BEDB62C1EE55A005C4E4B /* NC2WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		576BEDD32C1FD241005C4E4B /* EngWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576BEDD22C1FD241005C4E4B /* EngWord.swift */; };
+		576BEDD52C1FD2F7005C4E4B /* UserDefaults+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576BEDD42C1FD2F7005C4E4B /* UserDefaults+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +48,7 @@
 /* Begin PBXFileReference section */
 		576BEDA12C1EE53D005C4E4B /* NC2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NC2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		576BEDA42C1EE53D005C4E4B /* NC2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NC2App.swift; sourceTree = "<group>"; };
-		576BEDA62C1EE53D005C4E4B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		576BEDA62C1EE53D005C4E4B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		576BEDA82C1EE53E005C4E4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		576BEDAB2C1EE53E005C4E4B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		576BEDB62C1EE55A005C4E4B /* NC2WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NC2WidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +60,8 @@
 		576BEDC32C1EE55B005C4E4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		576BEDCB2C1FC8E1005C4E4B /* NC2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NC2.entitlements; sourceTree = "<group>"; };
 		576BEDCC2C1FCDD7005C4E4B /* NC2WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NC2WidgetExtension.entitlements; sourceTree = "<group>"; };
+		576BEDD22C1FD241005C4E4B /* EngWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngWord.swift; sourceTree = "<group>"; };
+		576BEDD42C1FD2F7005C4E4B /* UserDefaults+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,10 +107,12 @@
 		576BEDA32C1EE53D005C4E4B /* NC2 */ = {
 			isa = PBXGroup;
 			children = (
+				576BEDCD2C1FD13B005C4E4B /* App */,
+				576BEDD12C1FD1DB005C4E4B /* Extension */,
+				576BEDCE2C1FD158005C4E4B /* Feature */,
+				576BEDD02C1FD1BB005C4E4B /* Model */,
+				576BEDD62C1FD3CA005C4E4B /* Resource */,
 				576BEDCB2C1FC8E1005C4E4B /* NC2.entitlements */,
-				576BEDA42C1EE53D005C4E4B /* NC2App.swift */,
-				576BEDA62C1EE53D005C4E4B /* ContentView.swift */,
-				576BEDA82C1EE53E005C4E4B /* Assets.xcassets */,
 				576BEDAA2C1EE53E005C4E4B /* Preview Content */,
 			);
 			path = NC2;
@@ -138,6 +144,54 @@
 				576BEDC32C1EE55B005C4E4B /* Info.plist */,
 			);
 			path = NC2Widget;
+			sourceTree = "<group>";
+		};
+		576BEDCD2C1FD13B005C4E4B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				576BEDA42C1EE53D005C4E4B /* NC2App.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		576BEDCE2C1FD158005C4E4B /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				576BEDCF2C1FD162005C4E4B /* Home */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		576BEDCF2C1FD162005C4E4B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				576BEDA62C1EE53D005C4E4B /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		576BEDD02C1FD1BB005C4E4B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				576BEDD22C1FD241005C4E4B /* EngWord.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		576BEDD12C1FD1DB005C4E4B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				576BEDD42C1FD2F7005C4E4B /* UserDefaults+Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		576BEDD62C1FD3CA005C4E4B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				576BEDA82C1EE53E005C4E4B /* Assets.xcassets */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,7 +295,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				576BEDA72C1EE53D005C4E4B /* ContentView.swift in Sources */,
+				576BEDD52C1FD2F7005C4E4B /* UserDefaults+Ext.swift in Sources */,
+				576BEDD32C1FD241005C4E4B /* EngWord.swift in Sources */,
+				576BEDA72C1EE53D005C4E4B /* HomeView.swift in Sources */,
 				576BEDA52C1EE53D005C4E4B /* NC2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
