@@ -1,8 +1,8 @@
-# 2024-NC2-M0-AugmentedReality
+# 2024-NC2-A19-Widgets
 ## 🎥 Youtube Link
 (추후 만들어진 유튜브 링크 추가)
 
-## 💡 About Augmented Reality
+## 💡 About Widgets
 (해당 기술에 대한 조사 내용 정리)
 
 > **예시** <br/><br/>
