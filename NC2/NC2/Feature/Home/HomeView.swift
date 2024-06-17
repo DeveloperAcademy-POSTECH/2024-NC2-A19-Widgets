@@ -65,13 +65,13 @@ fileprivate struct EnglishWordView: View {
                 
                 Spacer()
                 
-                Button(action: {
-                    
-                }, label: {
-                    Image(systemName: "speaker.wave.2.fill")
-                        .font(.system(size: 25, weight: .medium))
-                        .tint(.black)
-                })
+//                Button(action: {
+//                    
+//                }, label: {
+//                    Image(systemName: "speaker.wave.2.fill")
+//                        .font(.system(size: 25, weight: .medium))
+//                        .tint(.black)
+//                })
             }
             
             Spacer().frame(height: 40)
