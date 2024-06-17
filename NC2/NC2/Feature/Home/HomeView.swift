@@ -8,17 +8,37 @@
 import SwiftUI
 
 struct HomeView: View {
+    @Environment(HomeViewModel.self) private var homeViewModel
+    
     var body: some View {
+        @Bindable var homeViewModel = homeViewModel
         VStack {
-        
-            ContainerView()
-            
+            ContainerView(homeViewModel: homeViewModel)
         }
         .padding()
+        .alert(
+            "새로운 영단어를 불러오시겠습니까?",
+            isPresented: $homeViewModel.isAlert) {
+                Button {
+                    homeViewModel.getRandomWord()
+                } label: {
+                    Text("확인")
+                }
+
+                Button(role: .cancel) {
+                } label: {
+                    Text("취소")
+                }
+            }
     }
 }
 
 fileprivate struct ContainerView: View {
+    private var homeViewModel: HomeViewModel
+    
+    init(homeViewModel: HomeViewModel) {
+        self.homeViewModel = homeViewModel
+    }
     
     fileprivate var body: some View {
         VStack {
@@ -28,16 +48,16 @@ fileprivate struct ContainerView: View {
                 Spacer()
             }
             
-            EnglishWordView()
+            EnglishWordView(homeViewModel: homeViewModel)
             
             Spacer().frame(height: 40)
             
-            ExampleSentence()
+            ExampleSentence(homeViewModel: homeViewModel)
             
             Spacer()
             
             Button(action: {
-                
+                homeViewModel.isAlert = true
             }, label: {
                 HStack {
                     Spacer()
@@ -55,11 +75,16 @@ fileprivate struct ContainerView: View {
 }
 
 fileprivate struct EnglishWordView: View {
+    private var homeViewModel: HomeViewModel
+    
+    init(homeViewModel: HomeViewModel) {
+        self.homeViewModel = homeViewModel
+    }
     
     fileprivate var body: some View {
         VStack(alignment: .leading) {
             HStack {
-                Text("homeostasis")
+                Text("\(homeViewModel.currentWord?.word ?? "None")")
                     .font(.system(size: 30, weight: .medium))
                     .foregroundStyle(.green)
                 
@@ -76,7 +101,7 @@ fileprivate struct EnglishWordView: View {
             
             Spacer().frame(height: 40)
             
-            Text("항상성, 생체 항상성, 정상성 동적 평형")
+            Text("\(homeViewModel.currentWord?.meaning ?? "None")")
                 .font(.system(size: 18, weight: .medium))
         }
         .padding()
@@ -87,6 +112,11 @@ fileprivate struct EnglishWordView: View {
 }
 
 fileprivate struct ExampleSentence: View {
+    private var homeViewModel: HomeViewModel
+    
+    init(homeViewModel: HomeViewModel) {
+        self.homeViewModel = homeViewModel
+    }
     
     fileprivate var body: some View {
         VStack(alignment: .leading) {
@@ -97,12 +127,12 @@ fileprivate struct ExampleSentence: View {
                 Spacer()
             }
             
-            ForEach(0..<3) { int in
+            ForEach(homeViewModel.currentWord?.examples ?? [], id: \.self) { example in
                 HStack {
                     VStack(alignment: .leading, spacing: 8) {
-                        Text("When we become insulin-resistant, the homeostasis in that balance deviates from this state.")
+                        Text("\(example.english)")
                             .font(.system(size: 16, weight: .medium))
-                        Text("우리가 인슐린 저항성을 갖게 되면, 균형이 무너지면서 항상성을 유지할 수 없게 됩니다.")
+                        Text("\(example.korean)")
                             .font(.system(size: 13, weight: .light))
                     }
                     Spacer()
@@ -118,4 +148,5 @@ fileprivate struct ExampleSentence: View {
 
 #Preview {
     HomeView()
+        .environment(HomeViewModel())
 }
