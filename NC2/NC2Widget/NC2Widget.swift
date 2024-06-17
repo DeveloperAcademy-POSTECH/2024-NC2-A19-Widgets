@@ -53,15 +53,17 @@ struct SimpleEntry: TimelineEntry {
 }
 
 struct NC2WidgetEntryView : View {
+    @Environment(\.widgetFamily) var widgetFamily
     var entry: Provider.Entry
 
     var body: some View {
-        VStack {
-            Text("Time:")
-            Text(entry.date, style: .time)
-
-            Text("Emoji:")
-            Text(entry.word)
+        switch widgetFamily {
+        case .systemSmall:
+            SystemSmallView(entry: entry)
+        case .accessoryRectangular:
+            AccessoryRectangularView(entry: entry)
+        default:
+            VStack {}
         }
     }
 }
@@ -72,7 +74,7 @@ struct NC2Widget: Widget {
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
             if #available(iOS 17.0, *) {
-                AccessoryRectangularView(entry: entry)
+                NC2WidgetEntryView(entry: entry)
                     .containerBackground(.fill.tertiary, for: .widget)
             } else {
                 NC2WidgetEntryView(entry: entry)
@@ -112,7 +114,17 @@ struct AccessoryRectangularView: View {
     }
 }
 
-#Preview(as: .accessoryRectangular) {
+struct SystemSmallView: View {
+    var entry: Provider.Entry
+    
+    var body: some View {
+        VStack {
+            
+        }
+    }
+}
+
+#Preview(as: .systemSmall) {
     NC2Widget()
 } timeline: {
     SimpleEntry(
