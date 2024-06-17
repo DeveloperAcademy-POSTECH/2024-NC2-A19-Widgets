@@ -21,6 +21,7 @@
 		576BEDD52C1FD2F7005C4E4B /* UserDefaults+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576BEDD42C1FD2F7005C4E4B /* UserDefaults+Ext.swift */; };
 		576BEDD92C1FFE5A005C4E4B /* EngWord.json in Resources */ = {isa = PBXBuildFile; fileRef = 576BEDD72C1FFE5A005C4E4B /* EngWord.json */; };
 		576BEDDC2C200967005C4E4B /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576BEDDB2C200967005C4E4B /* Color+Ext.swift */; };
+		7CCC1D692C2013610040FBC8 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCC1D682C2013610040FBC8 /* FileManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		576BEDD42C1FD2F7005C4E4B /* UserDefaults+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Ext.swift"; sourceTree = "<group>"; };
 		576BEDD82C1FFE5A005C4E4B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/EngWord.json; sourceTree = "<group>"; };
 		576BEDDB2C200967005C4E4B /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		7CCC1D682C2013610040FBC8 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			children = (
 				576BEDCD2C1FD13B005C4E4B /* App */,
 				576BEDD12C1FD1DB005C4E4B /* Extension */,
+				7CCC1D672C20134C0040FBC8 /* Manager */,
 				576BEDCE2C1FD158005C4E4B /* Feature */,
 				576BEDD02C1FD1BB005C4E4B /* Model */,
 				576BEDD62C1FD3CA005C4E4B /* Resource */,
@@ -198,6 +201,14 @@
 				576BEDA82C1EE53E005C4E4B /* Assets.xcassets */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		7CCC1D672C20134C0040FBC8 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				7CCC1D682C2013610040FBC8 /* FileManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,6 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CCC1D692C2013610040FBC8 /* FileManager.swift in Sources */,
 				576BEDD52C1FD2F7005C4E4B /* UserDefaults+Ext.swift in Sources */,
 				576BEDD32C1FD241005C4E4B /* EngWord.swift in Sources */,
 				576BEDA72C1EE53D005C4E4B /* HomeView.swift in Sources */,
@@ -478,6 +490,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -513,6 +526,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
