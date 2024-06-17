@@ -6,12 +6,14 @@
 //
 
 import Foundation
+import WidgetKit
 
 @Observable
 final class HomeViewModel {
     private let jsonManager: JsonManager = JsonManager()
     
     private var engWords: [EngWord] = []
+    
     var currentWord: EngWord?
     var isAlert: Bool = false
     
@@ -19,8 +21,15 @@ final class HomeViewModel {
         self.engWords = jsonManager.load()
         self.getRandomWord()
     }
-    
+}
+
+extension HomeViewModel {
     func getRandomWord() {
-        self.currentWord = engWords.randomElement()
+        guard let word = engWords.randomElement() else { return }
+        self.currentWord = word
+        
+        UserDefaults.group?.setWidgetData(word)
+        
+        WidgetCenter.shared.reloadTimelines(ofKind: "NC2Widget")
     }
 }

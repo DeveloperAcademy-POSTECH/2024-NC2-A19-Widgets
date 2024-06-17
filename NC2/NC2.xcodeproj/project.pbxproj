@@ -22,6 +22,9 @@
 		576BEDD92C1FFE5A005C4E4B /* EngWord.json in Resources */ = {isa = PBXBuildFile; fileRef = 576BEDD72C1FFE5A005C4E4B /* EngWord.json */; };
 		576BEDDC2C200967005C4E4B /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576BEDDB2C200967005C4E4B /* Color+Ext.swift */; };
 		576BEDE32C2029FA005C4E4B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576BEDE22C2029FA005C4E4B /* HomeViewModel.swift */; };
+		576BEDE52C2054A9005C4E4B /* WidgetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576BEDE42C2054A9005C4E4B /* WidgetData.swift */; };
+		576BEDE62C20594D005C4E4B /* UserDefaults+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576BEDD42C1FD2F7005C4E4B /* UserDefaults+Ext.swift */; };
+		576BEDE72C20595B005C4E4B /* EngWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576BEDD22C1FD241005C4E4B /* EngWord.swift */; };
 		7CCC1D692C2013610040FBC8 /* JsonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCC1D682C2013610040FBC8 /* JsonManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +72,7 @@
 		576BEDD82C1FFE5A005C4E4B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/EngWord.json; sourceTree = "<group>"; };
 		576BEDDB2C200967005C4E4B /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		576BEDE22C2029FA005C4E4B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		576BEDE42C2054A9005C4E4B /* WidgetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetData.swift; sourceTree = "<group>"; };
 		7CCC1D682C2013610040FBC8 /* JsonManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -184,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				576BEDD22C1FD241005C4E4B /* EngWord.swift */,
+				576BEDE42C2054A9005C4E4B /* WidgetData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -319,6 +324,7 @@
 				7CCC1D692C2013610040FBC8 /* JsonManager.swift in Sources */,
 				576BEDD52C1FD2F7005C4E4B /* UserDefaults+Ext.swift in Sources */,
 				576BEDE32C2029FA005C4E4B /* HomeViewModel.swift in Sources */,
+				576BEDE52C2054A9005C4E4B /* WidgetData.swift in Sources */,
 				576BEDD32C1FD241005C4E4B /* EngWord.swift in Sources */,
 				576BEDA72C1EE53D005C4E4B /* HomeView.swift in Sources */,
 				576BEDA52C1EE53D005C4E4B /* NC2App.swift in Sources */,
@@ -332,6 +338,8 @@
 			files = (
 				576BEDBE2C1EE55A005C4E4B /* NC2WidgetBundle.swift in Sources */,
 				576BEDC02C1EE55A005C4E4B /* NC2Widget.swift in Sources */,
+				576BEDE72C20595B005C4E4B /* EngWord.swift in Sources */,
+				576BEDE62C20594D005C4E4B /* UserDefaults+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
