@@ -19,6 +19,7 @@
 		576BEDC62C1EE55B005C4E4B /* NC2WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 576BEDB62C1EE55A005C4E4B /* NC2WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		576BEDD32C1FD241005C4E4B /* EngWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576BEDD22C1FD241005C4E4B /* EngWord.swift */; };
 		576BEDD52C1FD2F7005C4E4B /* UserDefaults+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576BEDD42C1FD2F7005C4E4B /* UserDefaults+Ext.swift */; };
+		576BEDD92C1FFE5A005C4E4B /* EngWord.json in Resources */ = {isa = PBXBuildFile; fileRef = 576BEDD72C1FFE5A005C4E4B /* EngWord.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		576BEDCC2C1FCDD7005C4E4B /* NC2WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NC2WidgetExtension.entitlements; sourceTree = "<group>"; };
 		576BEDD22C1FD241005C4E4B /* EngWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngWord.swift; sourceTree = "<group>"; };
 		576BEDD42C1FD2F7005C4E4B /* UserDefaults+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Ext.swift"; sourceTree = "<group>"; };
+		576BEDD82C1FFE5A005C4E4B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/EngWord.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 		576BEDD62C1FD3CA005C4E4B /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				576BEDD72C1FFE5A005C4E4B /* EngWord.json */,
 				576BEDA82C1EE53E005C4E4B /* Assets.xcassets */,
 			);
 			path = Resource;
@@ -277,6 +280,7 @@
 			files = (
 				576BEDAC2C1EE53E005C4E4B /* Preview Assets.xcassets in Resources */,
 				576BEDA92C1EE53E005C4E4B /* Assets.xcassets in Resources */,
+				576BEDD92C1FFE5A005C4E4B /* EngWord.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +324,17 @@
 			targetProxy = 576BEDC42C1EE55B005C4E4B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		576BEDD72C1FFE5A005C4E4B /* EngWord.json */ = {
+			isa = PBXVariantGroup;
+			children = (
+				576BEDD82C1FFE5A005C4E4B /* en */,
+			);
+			name = EngWord.json;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		576BEDAD2C1EE53E005C4E4B /* Debug */ = {

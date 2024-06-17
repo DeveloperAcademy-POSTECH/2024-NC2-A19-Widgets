@@ -1,0 +1,160 @@
+/* 
+  EngWord.json
+  NC2
+
+  Created by 이정동 on 6/17/24.
+  
+*/
+
+[
+    {
+        "word": "comprehensive",
+        "meaning": "포괄적인, 종합적인",
+        "part_of_speech": "adjective",
+        "examples": [
+            {
+                "en": "The final exam was comprehensive, covering all the topics studied throughout the semester.",
+                "ko": "기말 시험은 종합적이어서 학기 동안 공부한 모든 주제를 다루었다."
+            },
+            {
+                "en": "She gave a comprehensive overview of the project's goals and objectives.",
+                "ko": "그녀는 프로젝트의 목표와 목적에 대한 포괄적인 개요를 제공했다."
+            }
+        ]
+    },
+    {
+        "word": "indicate",
+        "meaning": "나타내다, 표시하다",
+        "part_of_speech": "verb",
+        "examples": [
+            {
+                "en": "The study indicates a significant increase in global temperatures.",
+                "ko": "그 연구는 전 세계 기온이 크게 상승했음을 나타낸다."
+            },
+            {
+                "en": "The arrow indicates the direction to the exit.",
+                "ko": "화살표는 출구 방향을 나타낸다."
+            }
+        ]
+    },
+    {
+        "word": "evaluate",
+        "meaning": "평가하다, 감정하다",
+        "part_of_speech": "verb",
+        "examples": [
+            {
+                "en": "The teacher will evaluate the students' projects next week.",
+                "ko": "선생님은 다음 주에 학생들의 프로젝트를 평가할 것이다."
+            },
+            {
+                "en": "It's important to evaluate the effectiveness of the new policy.",
+                "ko": "새 정책의 효과를 평가하는 것이 중요하다."
+            }
+        ]
+    },
+    {
+        "word": "influence",
+        "meaning": "영향을 미치다",
+        "part_of_speech": "verb",
+        "examples": [
+            {
+                "en": "Her speech had a profound influence on the audience.",
+                "ko": "그녀의 연설은 청중에게 깊은 영향을 미쳤다."
+            },
+            {
+                "en": "Parents can significantly influence their children's behavior.",
+                "ko": "부모는 자녀의 행동에 상당한 영향을 미칠 수 있다."
+            }
+        ]
+    },
+    {
+        "word": "significant",
+        "meaning": "중요한, 의미 있는",
+        "part_of_speech": "adjective",
+        "examples": [
+            {
+                "en": "There was a significant change in the company's policy.",
+                "ko": "회사 정책에 중요한 변화가 있었다."
+            },
+            {
+                "en": "He played a significant role in the negotiations.",
+                "ko": "그는 협상에서 중요한 역할을 했다."
+            }
+        ]
+    },
+    {
+        "word": "approach",
+        "meaning": "접근하다, 접근법",
+        "part_of_speech": "verb, noun",
+        "examples": [
+            {
+                "en": "We need to find a new approach to solve this problem.",
+                "ko": "이 문제를 해결하기 위해 새로운 접근법을 찾아야 한다."
+            },
+            {
+                "en": "As we approach the city, the traffic becomes heavier.",
+                "ko": "도시에 접근할수록 교통이 더 혼잡해진다."
+            }
+        ]
+    },
+    {
+        "word": "interpret",
+        "meaning": "해석하다, 통역하다",
+        "part_of_speech": "verb",
+        "examples": [
+            {
+                "en": "It's important to interpret the data accurately.",
+                "ko": "데이터를 정확하게 해석하는 것이 중요하다."
+            },
+            {
+                "en": "She can interpret English into Korean fluently.",
+                "ko": "그녀는 영어를 한국어로 유창하게 통역할 수 있다."
+            }
+        ]
+    },
+    {
+        "word": "assume",
+        "meaning": "가정하다, 추정하다",
+        "part_of_speech": "verb",
+        "examples": [
+            {
+                "en": "Many people assume that the theory is correct.",
+                "ko": "많은 사람들이 그 이론이 맞다고 가정한다."
+            },
+            {
+                "en": "Let's assume that this hypothesis is true.",
+                "ko": "이 가설이 사실이라고 가정해 보자."
+            }
+        ]
+    },
+    {
+        "word": "context",
+        "meaning": "맥락, 문맥",
+        "part_of_speech": "noun",
+        "examples": [
+            {
+                "en": "Understanding the context of the situation is crucial.",
+                "ko": "상황의 맥락을 이해하는 것이 중요하다."
+            },
+            {
+                "en": "The meaning of the word changes depending on the context.",
+                "ko": "그 단어의 의미는 문맥에 따라 달라진다."
+            }
+        ]
+    },
+    {
+        "word": "consistent",
+        "meaning": "일관된, 일치하는",
+        "part_of_speech": "adjective",
+        "examples": [
+            {
+                "en": "Her results were consistent with the previous experiments.",
+                "ko": "그녀의 결과는 이전 실험과 일치했다."
+            },
+            {
+                "en": "He has been consistent in his performance throughout the season.",
+                "ko": "그는 시즌 내내 일관된 성과를 보여왔다."
+            }
+        ]
+    }
+]
