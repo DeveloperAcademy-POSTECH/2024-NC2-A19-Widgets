@@ -28,20 +28,14 @@ struct Provider: TimelineProvider {
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         var entries: [SimpleEntry] = []
-
-        // Generate a timeline consisting of five entries an hour apart, starting from the current date.
-        let currentDate = Date()
-        for hourOffset in 0 ..< 5 {
-            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            
-            if let widgetData = UserDefaults.group?.getWidgetData() {
-                let entry = SimpleEntry(
-                    date: Date(),
-                    word: widgetData.word,
-                    meaning: widgetData.meaning
-                )
-                entries.append(entry)
-            }
+        
+        if let widgetData = UserDefaults.group?.getWidgetData() {
+            let entry = SimpleEntry(
+                date: Date().test,
+                word: widgetData.word,
+                meaning: widgetData.meaning
+            )
+            entries.append(entry)
         }
 
         let timeline = Timeline(entries: entries, policy: .atEnd)
@@ -108,7 +102,7 @@ struct AccessoryRectangularView: View {
                 
                 
                 Text(entry.word)
-                    .font(.system(size: 18, weight: .black))
+                    .font(.system(size: 16, weight: .black))
                 
                 Text(entry.meaning)
                     .font(.system(size: 12, weight: .bold))

@@ -11,6 +11,10 @@
             {
                 "en": "She gave a comprehensive overview of the project's goals and objectives.",
                 "ko": "그녀는 프로젝트의 목표와 목적에 대한 포괄적인 개요를 제공했다."
+            },
+            {
+                "en": "The company offers a comprehensive benefits package to all employees.",
+                "ko": "회사는 모든 직원에게 포괄적인 복지 패키지를 제공한다."
             }
         ]
     },
@@ -26,6 +30,10 @@
             {
                 "en": "The arrow indicates the direction to the exit.",
                 "ko": "화살표는 출구 방향을 나타낸다."
+            },
+            {
+                "en": "His tone of voice indicated that he was annoyed.",
+                "ko": "그의 말투는 그가 짜증나 있음을 나타냈다."
             }
         ]
     },
@@ -41,6 +49,10 @@
             {
                 "en": "It's important to evaluate the effectiveness of the new policy.",
                 "ko": "새 정책의 효과를 평가하는 것이 중요하다."
+            },
+            {
+                "en": "We need to evaluate all the options before making a decision.",
+                "ko": "결정을 내리기 전에 모든 옵션을 평가할 필요가 있다."
             }
         ]
     },
@@ -56,6 +68,10 @@
             {
                 "en": "Parents can significantly influence their children's behavior.",
                 "ko": "부모는 자녀의 행동에 상당한 영향을 미칠 수 있다."
+            },
+            {
+                "en": "The weather can influence our mood and productivity.",
+                "ko": "날씨는 우리의 기분과 생산성에 영향을 미칠 수 있다."
             }
         ]
     },
@@ -71,6 +87,10 @@
             {
                 "en": "He played a significant role in the negotiations.",
                 "ko": "그는 협상에서 중요한 역할을 했다."
+            },
+            {
+                "en": "The discovery was significant for the field of medicine.",
+                "ko": "그 발견은 의학 분야에 중요했다."
             }
         ]
     },
@@ -86,6 +106,10 @@
             {
                 "en": "As we approach the city, the traffic becomes heavier.",
                 "ko": "도시에 접근할수록 교통이 더 혼잡해진다."
+            },
+            {
+                "en": "Her approach to teaching is very innovative.",
+                "ko": "그녀의 교육 접근법은 매우 혁신적이다."
             }
         ]
     },
@@ -101,6 +125,10 @@
             {
                 "en": "She can interpret English into Korean fluently.",
                 "ko": "그녀는 영어를 한국어로 유창하게 통역할 수 있다."
+            },
+            {
+                "en": "How do you interpret his silence?",
+                "ko": "그의 침묵을 어떻게 해석하나요?"
             }
         ]
     },
@@ -116,6 +144,10 @@
             {
                 "en": "Let's assume that this hypothesis is true.",
                 "ko": "이 가설이 사실이라고 가정해 보자."
+            },
+            {
+                "en": "He assumed full responsibility for the project.",
+                "ko": "그는 프로젝트에 대한 전적인 책임을 맡았다."
             }
         ]
     },
@@ -131,6 +163,10 @@
             {
                 "en": "The meaning of the word changes depending on the context.",
                 "ko": "그 단어의 의미는 문맥에 따라 달라진다."
+            },
+            {
+                "en": "In the context of the story, his actions make sense.",
+                "ko": "이야기의 맥락에서 그의 행동은 이해가 된다."
             }
         ]
     },
@@ -141,11 +177,186 @@
         "examples": [
             {
                 "en": "Her results were consistent with the previous experiments.",
-                "ko": "그녀의 결과는 이전 실험과 일치했다."
+                "ko": "그녀의 결과는 이전 실험들과 일치했다."
             },
             {
-                "en": "He has been consistent in his performance throughout the season.",
-                "ko": "그는 시즌 내내 일관된 성과를 보여왔다."
+                "en": "He has been consistent in his work performance.",
+                "ko": "그는 일관된 업무 성과를 보여주고 있다."
+            },
+            {
+                "en": "The team's performance was consistent throughout the season.",
+                "ko": "팀의 성과는 시즌 내내 일관되었다."
+            }
+        ]
+    },
+    {
+        "word": "derive",
+        "meaning": "끌어내다, 유래하다",
+        "part_of_speech": "verb",
+        "examples": [
+            {
+                "en": "Many English words are derived from Latin.",
+                "ko": "많은 영어 단어들이 라틴어에서 유래되었다."
+            },
+            {
+                "en": "She derives great pleasure from painting.",
+                "ko": "그녀는 그림 그리기에서 큰 즐거움을 얻는다."
+            },
+            {
+                "en": "The company derives most of its income from international sales.",
+                "ko": "그 회사는 대부분의 수익을 해외 판매에서 얻는다."
+            }
+        ]
+    },
+    {
+        "word": "factor",
+        "meaning": "요인, 요소",
+        "part_of_speech": "noun",
+        "examples": [
+            {
+                "en": "Several factors contributed to the success of the project.",
+                "ko": "여러 요인들이 프로젝트의 성공에 기여했다."
+            },
+            {
+                "en": "Cost is an important factor to consider when buying a car.",
+                "ko": "차를 살 때 고려해야 할 중요한 요소는 비용이다."
+            },
+            {
+                "en": "Environmental factors can affect health.",
+                "ko": "환경적인 요인들이 건강에 영향을 미칠 수 있다."
+            }
+        ]
+    },
+    {
+        "word": "identify",
+        "meaning": "확인하다, 식별하다",
+        "part_of_speech": "verb",
+        "examples": [
+            {
+                "en": "Can you identify the person in this photo?",
+                "ko": "이 사진 속 사람을 식별할 수 있나요?"
+            },
+            {
+                "en": "Scientists are trying to identify the cause of the disease.",
+                "ko": "과학자들은 질병의 원인을 확인하려고 노력하고 있다."
+            },
+            {
+                "en": "The witness was able to identify the suspect in the lineup.",
+                "ko": "목격자는 용의자를 줄에서 식별할 수 있었다."
+            }
+        ]
+    },
+    {
+        "word": "indicate",
+        "meaning": "나타내다, 표시하다",
+        "part_of_speech": "verb",
+        "examples": [
+            {
+                "en": "The study indicates a significant increase in global temperatures.",
+                "ko": "그 연구는 전 세계 기온이 크게 상승했음을 나타낸다."
+            },
+            {
+                "en": "The arrow indicates the direction to the exit.",
+                "ko": "화살표는 출구 방향을 나타낸다."
+            },
+            {
+                "en": "His tone of voice indicated that he was annoyed.",
+                "ko": "그의 말투는 그가 짜증나 있음을 나타냈다."
+            }
+        ]
+    },
+    {
+        "word": "major",
+        "meaning": "주요한, 중대한",
+        "part_of_speech": "adjective",
+        "examples": [
+            {
+                "en": "The company announced a major breakthrough in technology.",
+                "ko": "회사는 기술 분야에서 중대한 돌파구를 발표했다."
+            },
+            {
+                "en": "He played a major role in the development of the project.",
+                "ko": "그는 프로젝트 개발에 중요한 역할을 했다."
+            },
+            {
+                "en": "Traffic is a major problem in big cities.",
+                "ko": "교통은 대도시에서 중대한 문제이다."
+            }
+        ]
+    },
+    {
+        "word": "occur",
+        "meaning": "발생하다, 일어나다",
+        "part_of_speech": "verb",
+        "examples": [
+            {
+                "en": "A solar eclipse will occur tomorrow.",
+                "ko": "내일 일식이 일어날 것이다."
+            },
+            {
+                "en": "Accidents frequently occur on this road.",
+                "ko": "이 도로에서는 사고가 자주 발생한다."
+            },
+            {
+                "en": "When did the event occur?",
+                "ko": "그 사건은 언제 발생했나요?"
+            }
+        ]
+    },
+    {
+        "word": "policy",
+        "meaning": "정책, 방침",
+        "part_of_speech": "noun",
+        "examples": [
+            {
+                "en": "The government introduced a new economic policy.",
+                "ko": "정부는 새로운 경제 정책을 도입했다."
+            },
+            {
+                "en": "The company has a strict no-smoking policy.",
+                "ko": "그 회사는 엄격한 금연 정책을 가지고 있다."
+            },
+            {
+                "en": "It is company policy to provide excellent customer service.",
+                "ko": "우수한 고객 서비스를 제공하는 것이 회사 방침이다."
+            }
+        ]
+    },
+    {
+        "word": "require",
+        "meaning": "필요로 하다, 요구하다",
+        "part_of_speech": "verb",
+        "examples": [
+            {
+                "en": "This job requires a lot of experience.",
+                "ko": "이 직업은 많은 경험을 필요로 한다."
+            },
+            {
+                "en": "The project requires more resources.",
+                "ko": "그 프로젝트는 더 많은 자원을 필요로 한다."
+            },
+            {
+                "en": "You are required to wear a uniform.",
+                "ko": "당신은 유니폼을 착용해야 한다."
+            }
+        ]
+    },
+    {
+        "word": "significant",
+        "meaning": "중요한, 상당한",
+        "part_of_speech": "adjective",
+        "examples": [
+            {
+                "en": "The discovery was a significant achievement in the field of science.",
+                "ko": "그 발견은 과학 분야에서 중요한 업적이었다."
+            },
+            {
+                "en": "There has been a significant increase in sales.",
+                "ko": "판매량이 상당히 증가했다."
+            },
+            {
+                "en": "The results showed a significant difference between the two groups.",
+                "ko": "결과는 두 그룹 간에 중요한 차이를 보여주었다."
             }
         ]
     }
