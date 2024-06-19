@@ -2,7 +2,7 @@
     {
         "word": "comprehensive",
         "meaning": "포괄적인, 종합적인",
-        "part_of_speech": "adjective",
+        "part_of_speech": "형용사",
         "examples": [
             {
                 "en": "The final exam was comprehensive, covering all the topics studied throughout the semester.",
@@ -21,7 +21,7 @@
     {
         "word": "indicate",
         "meaning": "나타내다, 표시하다",
-        "part_of_speech": "verb",
+        "part_of_speech": "동사",
         "examples": [
             {
                 "en": "The study indicates a significant increase in global temperatures.",
@@ -40,7 +40,7 @@
     {
         "word": "evaluate",
         "meaning": "평가하다, 감정하다",
-        "part_of_speech": "verb",
+        "part_of_speech": "동사",
         "examples": [
             {
                 "en": "The teacher will evaluate the students' projects next week.",
@@ -59,7 +59,7 @@
     {
         "word": "influence",
         "meaning": "영향을 미치다",
-        "part_of_speech": "verb",
+        "part_of_speech": "동사",
         "examples": [
             {
                 "en": "Her speech had a profound influence on the audience.",
@@ -78,7 +78,7 @@
     {
         "word": "significant",
         "meaning": "중요한, 의미 있는",
-        "part_of_speech": "adjective",
+        "part_of_speech": "형용사",
         "examples": [
             {
                 "en": "There was a significant change in the company's policy.",
@@ -97,7 +97,7 @@
     {
         "word": "approach",
         "meaning": "접근하다, 접근법",
-        "part_of_speech": "verb, noun",
+        "part_of_speech": "동사, 명사",
         "examples": [
             {
                 "en": "We need to find a new approach to solve this problem.",
@@ -116,7 +116,7 @@
     {
         "word": "interpret",
         "meaning": "해석하다, 통역하다",
-        "part_of_speech": "verb",
+        "part_of_speech": "동사",
         "examples": [
             {
                 "en": "It's important to interpret the data accurately.",
@@ -135,7 +135,7 @@
     {
         "word": "assume",
         "meaning": "가정하다, 추정하다",
-        "part_of_speech": "verb",
+        "part_of_speech": "동사",
         "examples": [
             {
                 "en": "Many people assume that the theory is correct.",
@@ -154,7 +154,7 @@
     {
         "word": "context",
         "meaning": "맥락, 문맥",
-        "part_of_speech": "noun",
+        "part_of_speech": "명사",
         "examples": [
             {
                 "en": "Understanding the context of the situation is crucial.",
@@ -173,7 +173,7 @@
     {
         "word": "consistent",
         "meaning": "일관된, 일치하는",
-        "part_of_speech": "adjective",
+        "part_of_speech": "형용사",
         "examples": [
             {
                 "en": "Her results were consistent with the previous experiments.",
@@ -192,7 +192,7 @@
     {
         "word": "derive",
         "meaning": "끌어내다, 유래하다",
-        "part_of_speech": "verb",
+        "part_of_speech": "동사",
         "examples": [
             {
                 "en": "Many English words are derived from Latin.",
@@ -211,7 +211,7 @@
     {
         "word": "factor",
         "meaning": "요인, 요소",
-        "part_of_speech": "noun",
+        "part_of_speech": "명사",
         "examples": [
             {
                 "en": "Several factors contributed to the success of the project.",
@@ -230,7 +230,7 @@
     {
         "word": "identify",
         "meaning": "확인하다, 식별하다",
-        "part_of_speech": "verb",
+        "part_of_speech": "동사",
         "examples": [
             {
                 "en": "Can you identify the person in this photo?",
@@ -249,7 +249,7 @@
     {
         "word": "indicate",
         "meaning": "나타내다, 표시하다",
-        "part_of_speech": "verb",
+        "part_of_speech": "동사",
         "examples": [
             {
                 "en": "The study indicates a significant increase in global temperatures.",
@@ -268,7 +268,7 @@
     {
         "word": "major",
         "meaning": "주요한, 중대한",
-        "part_of_speech": "adjective",
+        "part_of_speech": "형용사",
         "examples": [
             {
                 "en": "The company announced a major breakthrough in technology.",
@@ -287,7 +287,7 @@
     {
         "word": "occur",
         "meaning": "발생하다, 일어나다",
-        "part_of_speech": "verb",
+        "part_of_speech": "동사",
         "examples": [
             {
                 "en": "A solar eclipse will occur tomorrow.",
@@ -306,7 +306,7 @@
     {
         "word": "policy",
         "meaning": "정책, 방침",
-        "part_of_speech": "noun",
+        "part_of_speech": "명사",
         "examples": [
             {
                 "en": "The government introduced a new economic policy.",
@@ -325,7 +325,7 @@
     {
         "word": "require",
         "meaning": "필요로 하다, 요구하다",
-        "part_of_speech": "verb",
+        "part_of_speech": "동사",
         "examples": [
             {
                 "en": "This job requires a lot of experience.",
@@ -344,7 +344,7 @@
     {
         "word": "significant",
         "meaning": "중요한, 상당한",
-        "part_of_speech": "adjective",
+        "part_of_speech": "형용사",
         "examples": [
             {
                 "en": "The discovery was a significant achievement in the field of science.",
