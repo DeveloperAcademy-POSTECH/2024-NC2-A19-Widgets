@@ -1,15 +1,26 @@
 //
-//  FileManager.swift
+//  EngWordManager.swift
 //  NC2
 //
-//  Created by 대여품 on 6/17/24.
+//  Created by 이정동 on 6/18/24.
 //
 
 import Foundation
+import WidgetKit
 
-final class JsonManager {
+@Observable
+class EngWordManager {
+    static let shared = EngWordManager()
+    private init() {
+        self.words = load()
+
+        self.setRandomWord()
+    }
     
-    func load() -> [EngWord] {
+    private var words: [EngWord] = []
+    var currentWord: EngWord?
+    
+    private func load() -> [EngWord] {
         let data: Data
         let fileName = "EngWord.json"
 
@@ -30,5 +41,14 @@ final class JsonManager {
         } catch {
             fatalError("Couldn't parse \(fileName) as \([EngWord].self):\n\(error)")
         }
+    }
+    
+    func setRandomWord() {
+        guard let word = words.randomElement() else { return }
+        self.currentWord = word
+        
+        UserDefaults.group?.setWidgetData(word)
+        
+        WidgetCenter.shared.reloadTimelines(ofKind: "NC2Widget")
     }
 }

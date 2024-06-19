@@ -20,7 +20,7 @@ struct HomeView: View {
             "새로운 영단어를 불러오시겠습니까?",
             isPresented: $homeViewModel.isAlert) {
                 Button {
-                    homeViewModel.getRandomWord()
+                    EngWordManager.shared.setRandomWord()
                 } label: {
                     Text("확인")
                 }
@@ -76,6 +76,7 @@ fileprivate struct ContainerView: View {
 
 fileprivate struct EnglishWordView: View {
     private var homeViewModel: HomeViewModel
+    private var engWordManager = EngWordManager.shared
     
     init(homeViewModel: HomeViewModel) {
         self.homeViewModel = homeViewModel
@@ -84,7 +85,7 @@ fileprivate struct EnglishWordView: View {
     fileprivate var body: some View {
         VStack(alignment: .leading) {
             HStack {
-                Text("\(homeViewModel.currentWord?.word ?? "None")")
+                Text("\(engWordManager.currentWord?.word ?? "None")")
                     .font(.system(size: 30, weight: .medium))
                     .foregroundStyle(.green)
                 
@@ -101,7 +102,7 @@ fileprivate struct EnglishWordView: View {
             
             Spacer().frame(height: 40)
             
-            Text("\(homeViewModel.currentWord?.meaning ?? "None")")
+            Text("\(engWordManager.currentWord?.meaning ?? "None")")
                 .font(.system(size: 18, weight: .medium))
         }
         .padding()
@@ -113,6 +114,7 @@ fileprivate struct EnglishWordView: View {
 
 fileprivate struct ExampleSentence: View {
     private var homeViewModel: HomeViewModel
+    private var engWordManager = EngWordManager.shared
     
     init(homeViewModel: HomeViewModel) {
         self.homeViewModel = homeViewModel
@@ -127,7 +129,7 @@ fileprivate struct ExampleSentence: View {
                 Spacer()
             }
             
-            ForEach(homeViewModel.currentWord?.examples ?? [], id: \.self) { example in
+            ForEach(engWordManager.currentWord?.examples ?? [], id: \.self) { example in
                 HStack {
                     VStack(alignment: .leading, spacing: 8) {
                         Text("\(example.english)")
