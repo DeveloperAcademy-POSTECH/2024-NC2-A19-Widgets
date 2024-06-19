@@ -13,7 +13,10 @@ struct Provider: TimelineProvider {
         SimpleEntry(
             date: Date(),
             word: "Hello",
-            meaning: "안녕하세요."
+            meaning: "안녕하세요.",
+            en: "En",
+            ko: "Kr",
+            partOfSpeech: "동사"
         )
     }
 
@@ -21,7 +24,10 @@ struct Provider: TimelineProvider {
         let entry = SimpleEntry(
             date: Date(),
             word: "Hello",
-            meaning: "안녕하세요."
+            meaning: "안녕하세요.",
+            en: "En",
+            ko: "Kr",
+            partOfSpeech: "동사"
         )
         completion(entry)
     }
@@ -33,7 +39,10 @@ struct Provider: TimelineProvider {
             let entry = SimpleEntry(
                 date: Date().test,
                 word: widgetData.word,
-                meaning: widgetData.meaning
+                meaning: widgetData.meaning,
+                en: widgetData.examples[0].english,
+                ko: widgetData.examples[0].korean,
+                partOfSpeech: widgetData.partOfSpeech
             )
             entries.append(entry)
         }
@@ -47,6 +56,9 @@ struct SimpleEntry: TimelineEntry {
     let date: Date
     let word: String
     let meaning: String
+    let en: String
+    let ko: String
+    let partOfSpeech: String
 }
 
 struct NC2WidgetEntryView : View {
@@ -76,7 +88,7 @@ struct NC2Widget: Widget {
                 NC2WidgetEntryView(entry: entry)
                     .containerBackground(for: .widget){
                         LinearGradient(
-                            gradient: Gradient(colors: [.white, .green.opacity(0.5)]),
+                            gradient: Gradient(colors: [.white, .green.opacity(0.15), .green.opacity(0.42)]),
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
                         )
@@ -89,7 +101,7 @@ struct NC2Widget: Widget {
         }
         .configurationDisplayName("My Widget")
         .description("This is an example widget.")
-        .supportedFamilies([.systemSmall, .accessoryRectangular])
+        .supportedFamilies([.systemSmall, .systemMedium, .accessoryRectangular])
     }
 }
 
@@ -111,6 +123,8 @@ struct AccessoryRectangularView: View {
                 
                 Text(entry.word)
                     .font(.system(size: 16, weight: .black))
+                    .minimumScaleFactor(0.5)
+                
                 
                 Text(entry.meaning)
                     .font(.system(size: 12, weight: .bold))
@@ -144,24 +158,27 @@ struct SystemSmallView: View {
                 
                 Text(entry.word)
                     .font(.system(size: 18, weight: .bold, design: .serif))
-                    .foregroundStyle(                        LinearGradient(
-                        gradient: Gradient(colors: [.green.opacity(0.65), .green.opacity(0.8)]),
-                        startPoint: .topLeading,
-                        endPoint: .bottomTrailing
-                    )
-                    )
-                
-                Text(entry.meaning)
-                    .font(.system(size: 12, weight: .semibold))
                     .foregroundStyle(
                         LinearGradient(
-                            gradient: Gradient(colors: [.black.opacity(0.52), .black.opacity(0.67)]),
+                            gradient: Gradient(colors: [.green.opacity(0.65), .green.opacity(0.8)]),
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
                         )
                     )
+                    .minimumScaleFactor(0.5)
                 
-                    .minimumScaleFactor(entry.meaning.count < 45 ? 1 : 0.80 )
+                
+                Text("\(entry.meaning)\n\n\(entry.en)")
+                    .font(.system(size: 12, weight: .semibold))
+                    .foregroundStyle(
+                        LinearGradient(
+                            gradient: Gradient(colors: [.black.opacity(0.47), .black.opacity(0.62)]),
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        )
+                    )
+                    .minimumScaleFactor(0.5)
+                    .lineLimit(6)
                 Spacer()
             }
             Spacer()
@@ -193,12 +210,12 @@ struct SystemMediumView: View {
                 
                 Spacer()
                 
-                Text("동사")
+                Text(entry.partOfSpeech)
                     .font(.system(size: 12, weight: .semibold))
                     .padding(3)
                     .background(
                         LinearGradient(
-                            gradient: Gradient(colors: [.gray.opacity(0.5), .gray.opacity(0.65)]),
+                            gradient: Gradient(colors: [.gray.opacity(0.4), .gray.opacity(0.65)]),
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
                         ))
@@ -211,19 +228,22 @@ struct SystemMediumView: View {
             HStack{
                 Text(entry.word)
                     .font(.system(size: 18, weight: .bold, design: .serif))
-                    .foregroundStyle(                        LinearGradient(
-                        gradient: Gradient(colors: [.green.opacity(0.65), .green.opacity(0.8)]),
-                        startPoint: .topLeading,
-                        endPoint: .bottomTrailing
+                    .foregroundStyle(
+                        LinearGradient(
+                            gradient: Gradient(colors: [.green.opacity(0.65), .green.opacity(0.8)]),
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        )
                     )
-                    )
+                    .minimumScaleFactor(0.5)
+                
                 
                 Spacer()
                 Text(entry.meaning)
                     .font(.system(size: 12, weight: .semibold))
                     .foregroundStyle(
                         LinearGradient(
-                            gradient: Gradient(colors: [.black.opacity(0.52), .black.opacity(0.67)]),
+                            gradient: Gradient(colors: [.black.opacity(0.52), .black.opacity(0.62)]),
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
                         )
@@ -231,51 +251,58 @@ struct SystemMediumView: View {
                     .lineLimit(1)
             }
             
-            Spacer().frame(height: 5)
+            Spacer().frame(height: 3)
             
             VStack(alignment: .leading, spacing: 5) {
                 
-                Text("When we become insulin-resistant, the homeostasis in that balance deviates from this state.")
-                    .font(.system(size: 11, weight: .medium))
+                Text(entry.en)
+                    .font(.system(size: 12, weight: .medium))
                     .foregroundStyle(
                         LinearGradient(
-                            gradient: Gradient(colors: [.black.opacity(0.52), .black.opacity(0.67)]),
+                            gradient: Gradient(colors: [.black.opacity(0.47), .black.opacity(0.62)]),
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
                         )
                     )
-                    .multilineTextAlignment(.leading)
-                    .minimumScaleFactor(0.8)
                 
-                Text("우리가 인슐린 저항성을 갖게 되면, 균형이 무너지면서 항상성을 유지할 수 없게 됩니다.")
+                Text(entry.ko)
                     .font(.system(size: 11, weight: .light))
                     .foregroundStyle(
                         LinearGradient(
-                            gradient: Gradient(colors: [.black.opacity(0.52), .black.opacity(0.67)]),
+                            gradient: Gradient(colors: [.black.opacity(0.47), .black.opacity(0.62)]),
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
                         )
                     )
-                    .multilineTextAlignment(.leading)
-                    .minimumScaleFactor(0.8)
             }
+            .minimumScaleFactor(0.8)
         }
     }
 }
 
-#Preview(as: .systemMedium) {
-    //#Preview(as: .systemSmall) {
+#Preview(as: .systemSmall) {
+    //    #Preview(as: .systemMedium) {
     NC2Widget()
 } timeline: {
     SimpleEntry(
         date: Date(),
-        word: "indicate",
-        meaning: "나타내다, 표시하다\n\nThe study indicates a significant increase in global temperatures."
+        word: "comprehensive",
+        meaning: "포괄적인, 종합적인",
+        en: "The final exam was comprehensive, covering all the topics studied throughout the semester.",
+        ko: "기말 시험은 종합적이어서 학기 동안 공부한 모든 주제를 다루었다.",
+        partOfSpeech: "형용사"
     )
     
     SimpleEntry(
         date: Date(),
-        word: "Helloasdf",
-        meaning: "나타내다, 표시하다"
+        word: "approach",
+        meaning: "접근하다, 접근법",
+        en: "We need to find a new approach to solve this problem.",
+        ko: "이 문제를 해결하기 위해 새로운 접근법을 찾아야 한다.",
+        partOfSpeech: "동사, 명사"
     )
 }
+
+
+
+
