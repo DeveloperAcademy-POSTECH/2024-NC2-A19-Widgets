@@ -154,31 +154,52 @@ struct SystemSmallView: View {
                         ))
                     .clipShape(RoundedRectangle(cornerRadius: 5))
                     .foregroundStyle(.white)
+                Spacer().frame(height: 2)
                 
                 
-                Text(entry.word)
-                    .font(.system(size: 18, weight: .bold, design: .serif))
-                    .foregroundStyle(
-                        LinearGradient(
-                            gradient: Gradient(colors: [.green.opacity(0.65), .green.opacity(0.8)]),
-                            startPoint: .topLeading,
-                            endPoint: .bottomTrailing
+                VStack(alignment: .leading, spacing: 5){
+                    Text(entry.word)
+                        .font(.system(size: 18, weight: .bold, design: .serif))
+                        .foregroundStyle(
+                            LinearGradient(
+                                gradient: Gradient(colors: [.green.opacity(0.65), .green.opacity(0.8)]),
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            )
                         )
-                    )
-                    .minimumScaleFactor(0.5)
-                
-                
-                Text("\(entry.meaning)\n\n\(entry.en)")
-                    .font(.system(size: 12, weight: .semibold))
-                    .foregroundStyle(
-                        LinearGradient(
-                            gradient: Gradient(colors: [.black.opacity(0.47), .black.opacity(0.62)]),
-                            startPoint: .topLeading,
-                            endPoint: .bottomTrailing
+                        .minimumScaleFactor(0.8)
+                        .lineLimit(1)
+                    
+                    Spacer().frame(height: 1)
+                    
+                    Text(entry.partOfSpeech)
+                        .font(.system(size: 12, weight: .semibold))
+                        .padding(3)
+                        .background(
+                            LinearGradient(
+                                gradient: Gradient(colors: [.gray.opacity(0.4), .gray.opacity(0.65)]),
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            ))
+                        .clipShape(RoundedRectangle(cornerRadius: 5))
+                        .foregroundStyle(.white)
+                        .lineLimit(3)
+                    
+                    Text("\(entry.meaning)")
+                        .font(.system(size: 12, weight: .semibold))
+                        .foregroundStyle(
+                            LinearGradient(
+                                gradient: Gradient(colors: [.black.opacity(0.47), .black.opacity(0.62)]),
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            )
                         )
-                    )
-                    .minimumScaleFactor(0.5)
-                    .lineLimit(6)
+//                        .minimumScaleFactor(0.5)
+                        .lineLimit(6)
+                    
+                }
+//                .padding(.bottom)
+                
                 Spacer()
             }
             Spacer()
@@ -281,7 +302,7 @@ struct SystemMediumView: View {
 }
 
 #Preview(as: .systemSmall) {
-    //    #Preview(as: .systemMedium) {
+//        #Preview(as: .systemMedium) {
     NC2Widget()
 } timeline: {
     SimpleEntry(
