@@ -21,7 +21,12 @@
 		576BEDD52C1FD2F7005C4E4B /* UserDefaults+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576BEDD42C1FD2F7005C4E4B /* UserDefaults+Ext.swift */; };
 		576BEDD92C1FFE5A005C4E4B /* EngWord.json in Resources */ = {isa = PBXBuildFile; fileRef = 576BEDD72C1FFE5A005C4E4B /* EngWord.json */; };
 		576BEDDC2C200967005C4E4B /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576BEDDB2C200967005C4E4B /* Color+Ext.swift */; };
-		7CCC1D692C2013610040FBC8 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCC1D682C2013610040FBC8 /* FileManager.swift */; };
+		576BEDE32C2029FA005C4E4B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576BEDE22C2029FA005C4E4B /* HomeViewModel.swift */; };
+		576BEDE62C20594D005C4E4B /* UserDefaults+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576BEDD42C1FD2F7005C4E4B /* UserDefaults+Ext.swift */; };
+		576BEDE72C20595B005C4E4B /* EngWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576BEDD22C1FD241005C4E4B /* EngWord.swift */; };
+		576BEDE92C205E14005C4E4B /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576BEDE82C205E14005C4E4B /* Date+Ext.swift */; };
+		576BEDEA2C215438005C4E4B /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576BEDE82C205E14005C4E4B /* Date+Ext.swift */; };
+		576BEDF32C21A441005C4E4B /* EngWordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576BEDF22C21A441005C4E4B /* EngWordManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +72,10 @@
 		576BEDD42C1FD2F7005C4E4B /* UserDefaults+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Ext.swift"; sourceTree = "<group>"; };
 		576BEDD82C1FFE5A005C4E4B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/EngWord.json; sourceTree = "<group>"; };
 		576BEDDB2C200967005C4E4B /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
-		7CCC1D682C2013610040FBC8 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		576BEDE22C2029FA005C4E4B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		576BEDE82C205E14005C4E4B /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
+		576BEDEF2C21A3B2005C4E4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		576BEDF22C21A441005C4E4B /* EngWordManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngWordManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +121,7 @@
 		576BEDA32C1EE53D005C4E4B /* NC2 */ = {
 			isa = PBXGroup;
 			children = (
+				576BEDEF2C21A3B2005C4E4B /* Info.plist */,
 				576BEDCD2C1FD13B005C4E4B /* App */,
 				576BEDD12C1FD1DB005C4E4B /* Extension */,
 				7CCC1D672C20134C0040FBC8 /* Manager */,
@@ -173,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				576BEDA62C1EE53D005C4E4B /* HomeView.swift */,
+				576BEDE22C2029FA005C4E4B /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -190,6 +200,7 @@
 			children = (
 				576BEDD42C1FD2F7005C4E4B /* UserDefaults+Ext.swift */,
 				576BEDDB2C200967005C4E4B /* Color+Ext.swift */,
+				576BEDE82C205E14005C4E4B /* Date+Ext.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -206,7 +217,7 @@
 		7CCC1D672C20134C0040FBC8 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				7CCC1D682C2013610040FBC8 /* FileManager.swift */,
+				576BEDF22C21A441005C4E4B /* EngWordManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -313,9 +324,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CCC1D692C2013610040FBC8 /* FileManager.swift in Sources */,
+				576BEDE92C205E14005C4E4B /* Date+Ext.swift in Sources */,
 				576BEDD52C1FD2F7005C4E4B /* UserDefaults+Ext.swift in Sources */,
+				576BEDE32C2029FA005C4E4B /* HomeViewModel.swift in Sources */,
 				576BEDD32C1FD241005C4E4B /* EngWord.swift in Sources */,
+				576BEDF32C21A441005C4E4B /* EngWordManager.swift in Sources */,
 				576BEDA72C1EE53D005C4E4B /* HomeView.swift in Sources */,
 				576BEDA52C1EE53D005C4E4B /* NC2App.swift in Sources */,
 				576BEDDC2C200967005C4E4B /* Color+Ext.swift in Sources */,
@@ -328,6 +341,9 @@
 			files = (
 				576BEDBE2C1EE55A005C4E4B /* NC2WidgetBundle.swift in Sources */,
 				576BEDC02C1EE55A005C4E4B /* NC2Widget.swift in Sources */,
+				576BEDE72C20595B005C4E4B /* EngWord.swift in Sources */,
+				576BEDE62C20594D005C4E4B /* UserDefaults+Ext.swift in Sources */,
+				576BEDEA2C215438005C4E4B /* Date+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +501,7 @@
 				DEVELOPMENT_TEAM = 5DFZR8RCQR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NC2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -521,6 +538,7 @@
 				DEVELOPMENT_TEAM = 5DFZR8RCQR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NC2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

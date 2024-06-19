@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct NC2App: App {
+    @State private var homeViewModel = HomeViewModel()
+        
     var body: some Scene {
         WindowGroup {
             HomeView()
+                .environment(homeViewModel)
         }
     }
 }

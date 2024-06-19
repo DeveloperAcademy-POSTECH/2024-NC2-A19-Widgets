@@ -12,31 +12,28 @@ struct Provider: TimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
         SimpleEntry(
             date: Date(),
-            word: "😀",
-            meaning: "안녕"
+            word: "Hello",
+            meaning: "안녕하세요."
         )
     }
 
     func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
         let entry = SimpleEntry(
             date: Date(),
-            word: "😀",
-            meaning: "안녕"
+            word: "Hello",
+            meaning: "안녕하세요."
         )
         completion(entry)
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         var entries: [SimpleEntry] = []
-
-        // Generate a timeline consisting of five entries an hour apart, starting from the current date.
-        let currentDate = Date()
-        for hourOffset in 0 ..< 5 {
-            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
+        
+        if let widgetData = UserDefaults.group?.getWidgetData() {
             let entry = SimpleEntry(
-                date: Date(),
-                word: "😀",
-                meaning: "안녕"
+                date: Date().test,
+                word: widgetData.word,
+                meaning: widgetData.meaning
             )
             entries.append(entry)
         }
@@ -92,6 +89,7 @@ struct NC2Widget: Widget {
         }
         .configurationDisplayName("My Widget")
         .description("This is an example widget.")
+        .supportedFamilies([.systemSmall, .accessoryRectangular])
     }
 }
 
@@ -103,18 +101,19 @@ struct AccessoryRectangularView: View {
         
         HStack {
             VStack(alignment: .leading, spacing: 5) {
-                Label("오늘의 영단어", systemImage: "character.book.closed.fill")
+                Label("오늘의 영어단어", systemImage: "character.book.closed.fill")
                     .font(.system(size: 12, weight: .semibold))
-                    .padding(3)
+                    .padding(.vertical, 3)
+                    .padding(.horizontal, 5)
                     .background(Color.gray)
                     .clipShape(RoundedRectangle(cornerRadius: 5))
                 
                 
                 Text(entry.word)
-                    .font(.system(size: 18, weight: .bold))
+                    .font(.system(size: 16, weight: .black))
                 
                 Text(entry.meaning)
-                    .font(.system(size: 12, weight: .semibold))
+                    .font(.system(size: 12, weight: .bold))
             }
             
             Spacer()
@@ -263,7 +262,6 @@ struct SystemMediumView: View {
         }
     }
 }
-
 
 #Preview(as: .systemMedium) {
     //#Preview(as: .systemSmall) {

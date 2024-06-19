@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct EngWord: Codable {
+struct EngWord: Codable, Hashable {
     var word: String
     var meaning: String
     var partOfSpeech: String
@@ -19,7 +19,7 @@ struct EngWord: Codable {
     }
 }
 
-struct Sentence: Codable {
+struct Sentence: Codable, Hashable {
     var english: String
     var korean: String
     
