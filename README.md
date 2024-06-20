@@ -20,7 +20,16 @@
 매일 새로운 영단어를 제공하는 위젯을 만들어보자!
 
 ## 🖼️ Prototype
-(프로토타입과 설명 추가)
+![1](https://github.com/DeveloperAcademy-POSTECH/2024-NC2-A19-Widgets/assets/87902884/ab363c1c-ea31-4674-b8d2-44fbc15bc46d)
+![2](https://github.com/DeveloperAcademy-POSTECH/2024-NC2-A19-Widgets/assets/87902884/0183a702-7d43-4a4c-ac5c-954b6de1e5c9)
+![3](https://github.com/DeveloperAcademy-POSTECH/2024-NC2-A19-Widgets/assets/87902884/64b05575-a7dc-4df5-813f-d9285758f522)
 
 ## 🛠️ About Code
-(핵심 코드에 대한 설명 추가)
+### Widget Extension
+![EntryView](https://github.com/DeveloperAcademy-POSTECH/2024-NC2-A19-Widgets/assets/87902884/06cfc939-8621-4d8f-8479-1bb3f1dcf043)
+![Entry](https://github.com/DeveloperAcademy-POSTECH/2024-NC2-A19-Widgets/assets/87902884/b35b8dd1-cf96-4392-a521-0968e03512ea)
+![provider](https://github.com/DeveloperAcademy-POSTECH/2024-NC2-A19-Widgets/assets/87902884/c6b4d43e-a6d5-4ee0-aa63-f9a47fc9316b)
+
+### Main App
+![메ㅔ](https://github.com/DeveloperAcademy-POSTECH/2024-NC2-A19-Widgets/assets/87902884/3643c2fc-8ec6-4ba7-928d-47f43fb3f5e7)
+
